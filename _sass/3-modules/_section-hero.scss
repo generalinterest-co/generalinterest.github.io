@@ -1,0 +1,80 @@
+/* Hero */
+.hero {
+  margin: 96px 0;
+
+  @media only screen and (max-width: $desktop) {
+    margin: 40px 0;
+  }
+}
+
+.hero__inner {
+  .hero__title {
+    margin-bottom: 32px;
+    font-size: 68px;
+    line-height: 1.2;
+    color: var(--heading-font-color);
+
+    @media only screen and (max-width: 1140px) {
+      font-size: 60px;
+    }
+
+    @media only screen and (max-width: $desktop) {
+      font-size: 50px;
+    }
+
+    @media only screen and (max-width: $tablet) {
+      margin-bottom: 24px;
+      font-size: 40px;
+    }
+
+    @media only screen and (max-width: $mobile) {
+      font-size: 36px;
+    }
+  }
+
+  .hero__description {
+    margin-bottom: 0;
+    font-size: 30px;
+    color: var(--heading-font-color);
+
+    @media only screen and (max-width: 1140px) {
+      font-size: 30px;
+    }
+
+    @media only screen and (max-width: $desktop) {
+      font-size: 30px;
+    }
+
+    @media only screen and (max-width: $tablet) {
+      margin-bottom: 18px;
+      font-size: 30px;
+    }
+
+    @media only screen and (max-width: $mobile) {
+      font-size: 30px;
+    }
+  }
+
+  .hero__text {
+    margin-bottom: 0;
+    font-size: 24px;
+    color: var(--text-alt-color);
+
+    @media only screen and (max-width: 1140px) {
+      font-size: 24px;
+    }
+
+    @media only screen and (max-width: $desktop) {
+      font-size: 24px;
+    }
+
+    @media only screen and (max-width: $tablet) {
+      margin-bottom: 18px;
+      font-size: 24px;
+    }
+
+    @media only screen and (max-width: $mobile) {
+      font-size: 24px;
+    }
+  }
+}
