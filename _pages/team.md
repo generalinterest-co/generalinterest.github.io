@@ -9,8 +9,6 @@ permalink: /team/
     <img src="/images/09.jpg">
     <img src="/images/06.jpg">
     <img src="/images/03.jpg">
-    <img src="/images/08.jpg">
-    <img src="/images/05.jpg">
   </div>
   <em>Gallery / Team</em>
 </div>
