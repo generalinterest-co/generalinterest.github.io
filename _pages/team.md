@@ -4,15 +4,6 @@ title: Team
 permalink: /team/
 #image: '/images/01.jpg'
 ---
-<div class="gallery-box">
-  <div class="gallery">
-    <img src="/images/09.jpg">
-    <img src="/images/06.jpg">
-    <img src="/images/03.jpg">
-  </div>
-  <em>Gallery / Team</em>
-</div>
-
 ### Aaron David Mendonca
 ![Workflow]({{site.baseurl}}/images/placeholder-headshot.jpg)
 *Aaron David Mendonca*
