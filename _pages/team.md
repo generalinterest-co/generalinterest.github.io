@@ -13,8 +13,6 @@ permalink: /team/
   <em>Gallery / Team</em>
 </div>
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Magna eget est lorem ipsum dolor. Cras tincidunt lobortis feugiat vivamus.
-
 ### Aaron David Mendonca
 ![Workflow]({{site.baseurl}}/images/placeholder-headshot.jpg)
 *Aaron David Mendonca*
