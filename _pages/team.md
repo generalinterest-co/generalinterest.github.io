@@ -4,8 +4,17 @@ title: Team
 permalink: /team/
 #image: '/images/01.jpg'
 ---
+<div class="gallery-box">
+  <div class="gallery">
+    <img src="/images/aaron.jpg">
+    <img src="/images/placeholder-headshot.jpg">
+    <img src="/images/tim.jpg">
+  </div>
+  <em>Gallery / Team</em>
+</div>
+
 ### Aaron David Mendonca
-![Workflow]({{site.baseurl}}/images/placeholder-headshot.jpg)
+![Workflow]({{site.baseurl}}/images/aaron.jpg)
 *Aaron David Mendonca*
 
 Aaron loves leveraging confluences of specialized knowledge workers and skilled craftsmen to creatively and pragmatically reckon with complex infrastructural challenges.  He holds a Bachelor's in Architecture and Civil Engineering from IIT Kharagpur, and a Master's in Energy & Environments from the Harvard Graduate School of Design, where he was a Lodha Fellow. 
@@ -19,7 +28,7 @@ Aaron enjoys working across multiple scales of design and business ranging from 
 Adalberto Avila Jr., a seasoned Motion Graphics Designer, currently serves as Senior Designer at NBCUniversal Telemundo. Specializing in news and specials design, he creates captivating motion graphics packages for on-air network news shows using Adobe, Cinema 4D, and other software. Adalberto excels in fast-paced live news coverage, contributing to breaking news graphics packages and collaborating on 3D/design assets for broadcast augmented reality. Previously, he showcased creative strategy and graphic design as a Broadcast Designer at TeleviaUnivision, leaving a mark on major Latin musical award shows. With a career spanning Telefutura Network, Adalberto played a pivotal role in rebranding the network's graphics package, demonstrating expertise in 3D and 2D motion graphics. His educational background includes a Bachelors of Business Administration from Florida International University and an Associate of Arts & Science in Computer Animation from The Art Institute of Phoenix. Adalberto's comprehensive skill set reflects his dedication to the dynamic field of motion graphics design.
 
 ### Tim Dumatrait
-![Workflow]({{site.baseurl}}/images/placeholder-headshot.jpg)
+![Workflow]({{site.baseurl}}/images/tim.jpg)
 *Tim Dumatrait*
 
 Tim is a passionate craftsperson and systems thinker, with 15 years of experience driving creative design solutions and novel use of technology within product, real estate, design, and construction organizations.
