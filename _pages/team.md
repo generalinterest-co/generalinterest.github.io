@@ -7,7 +7,7 @@ permalink: /team/
 <div class="gallery-box">
   <div class="gallery">
     <img src="/images/aaron.jpg">
-    <img src="/images/placeholder-headshot.jpg">
+    <img src="/images/beto.jpg">
     <img src="/images/tim.jpg">
   </div>
   <em>Gallery / Team</em>
