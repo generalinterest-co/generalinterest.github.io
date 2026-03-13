@@ -141,6 +141,11 @@
   justify-content: center;
   gap: 20px;
 
+  > [class*="col"] {
+    flex: 1 1 0;
+    width: auto;
+  }
+
   @media only screen and (max-width: $tablet) {
     flex-direction: column;
     gap: 24px;
@@ -220,6 +225,11 @@
 .values-row {
   display: flex;
   gap: 24px;
+
+  > [class*="col"] {
+    flex: 1 1 0;
+    width: auto;
+  }
 
   @media only screen and (max-width: $tablet) {
     flex-direction: column;
@@ -306,6 +316,11 @@
 .team-grid {
   display: flex;
   gap: 24px;
+
+  > [class*="col"] {
+    flex: 1 1 0;
+    width: auto;
+  }
 
   @media only screen and (max-width: $tablet) {
     flex-direction: column;
