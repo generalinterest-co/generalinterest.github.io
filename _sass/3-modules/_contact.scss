@@ -16,19 +16,19 @@
   padding: 20px;
   font-size: 14px;
   font-weight: 500;
-  border: 2px solid var(--border-color);
-  border-radius: 2px;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
   outline: none;
   transition: .25s ease-in-out;
   resize: vertical;
-  color: var(--heading-font-color);
-  background-color: var(--background-color);
+  color: var(--white);
+  background-color: var(--background-alt-color);
 
   &::placeholder {
-    color: var(--text-color);
+    color: var(--text-alt-color);
   }
 
   &:focus {
-    border-color: var(--heading-font-color);
+    border-color: var(--brand-color);
   }
 }

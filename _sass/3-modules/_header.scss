@@ -1,14 +1,18 @@
 /* Header */
 .header {
+  position: relative;
+  z-index: 10;
+  border-bottom: 1px solid var(--border-color);
+
   .header__inner {
     position: relative;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    padding: 60px $base-spacing-unit;
-  
+    padding: 24px $base-spacing-unit;
+
     @media only screen and (max-width: $tablet) {
-      padding: 40px $base-spacing-unit;
+      padding: 20px $base-spacing-unit;
     }
   }
 }
@@ -20,11 +24,12 @@
   font-size: 36px;
   letter-spacing: -1px;
   line-height: 1;
-  font-weight: 700;
+  font-weight: 800;
+  color: var(--white);
   transition: none;
 
   &:hover {
-    color: var(--heading-font-color);
+    color: var(--white);
   }
 
   @media only screen and (max-width: $mobile) {
@@ -33,7 +38,7 @@
 }
 
 .logo__image {
-  max-height: 50px;
+  max-height: 40px;
 }
 
 /* Nav */
@@ -49,7 +54,7 @@
     z-index: 100;
     opacity: 0;
     visibility: hidden;
-    background-color: var(--background-color);
+    background-color: var(--dark);
 
     &.is-open {
       opacity: 1;
@@ -171,12 +176,17 @@
     .nav__link {
       position: relative;
       padding: 4px 0;
-      font-size: 16px;
+      font-size: 13px;
       line-height: 1;
-      font-weight: 700;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      color: var(--text-alt-color);
       transition: none;
 
       &.nav__link--current {
+        color: var(--white);
+
         &::after {
           transform: scaleX(1);
           transition: none;
@@ -185,7 +195,7 @@
       }
 
       &:hover {
-        color: var(--link-color);
+        color: var(--white);
 
         &::after {
           transform: scaleX(1);
