@@ -3,10 +3,10 @@
     <channel>
         <title></title>
         <description></description>
-        <link>http://localhost:4000/</link>
-        <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Sat, 14 Mar 2026 13:14:16 -0400</pubDate>
-        <lastBuildDate>Sat, 14 Mar 2026 13:14:16 -0400</lastBuildDate>
+        <link>https://www.generalinterest.co/</link>
+        <atom:link href="https://www.generalinterest.co/feed.xml" rel="self" type="application/rss+xml"/>
+        <pubDate>Sat, 14 Mar 2026 13:42:20 -0400</pubDate>
+        <lastBuildDate>Sat, 14 Mar 2026 13:42:20 -0400</lastBuildDate>
         <generator>Jekyll v4.4.1</generator>
         
             <item>
@@ -16,8 +16,8 @@
 &lt;p&gt;Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.&lt;/p&gt;
 </description>
                 <pubDate>Sat, 18 Feb 2023 07:00:00 -0500</pubDate>
-                <link>http://localhost:4000/blog/the-way-to-get-started-is-to-quit-talking-and-begin-doing</link>
-                <guid isPermaLink="true">http://localhost:4000/blog/the-way-to-get-started-is-to-quit-talking-and-begin-doing</guid>
+                <link>https://www.generalinterest.co/blog/the-way-to-get-started-is-to-quit-talking-and-begin-doing</link>
+                <guid isPermaLink="true">https://www.generalinterest.co/blog/the-way-to-get-started-is-to-quit-talking-and-begin-doing</guid>
                 
                 <category>innovation</category>
                 

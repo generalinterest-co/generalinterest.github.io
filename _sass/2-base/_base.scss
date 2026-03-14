@@ -1,5 +1,33 @@
+@use '../0-settings' as *;
+
 *, *::after, *::before {
   box-sizing: border-box;
+}
+
+/* Focus styles for keyboard accessibility */
+*:focus-visible {
+  outline: 2px solid var(--brand-color);
+  outline-offset: 2px;
+}
+
+/* Skip to content link */
+.skip-to-content {
+  position: absolute;
+  top: -100%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 9999;
+  padding: 12px 24px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--button-color);
+  background-color: var(--brand-color);
+  border-radius: 4px;
+  text-decoration: none;
+
+  &:focus {
+    top: 12px;
+  }
 }
 
 body {

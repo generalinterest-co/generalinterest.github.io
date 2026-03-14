@@ -13,17 +13,23 @@ document.addEventListener("DOMContentLoaded", function() {
   /* =======================================================
   // Menu + Theme Switcher + Toggle list view
   ======================================================= */
-  menuOpenIcon.addEventListener("click", () => {
-    menuOpen();
-  });
+  if (menuOpenIcon) {
+    menuOpenIcon.addEventListener("click", () => {
+      menuOpen();
+    });
+  }
 
-  menuCloseIcon.addEventListener("click", () => {
-    menuClose();
-  });
+  if (menuCloseIcon) {
+    menuCloseIcon.addEventListener("click", () => {
+      menuClose();
+    });
+  }
 
-  toggleTheme.addEventListener("click", () => {
-    darkMode();
-  });
+  if (toggleTheme) {
+    toggleTheme.addEventListener("click", () => {
+      darkMode();
+    });
+  }
 
   if (portfolioViewButton) {
     portfolioViewButton.addEventListener("click", () => {
@@ -81,15 +87,15 @@ document.addEventListener("DOMContentLoaded", function() {
   /* =======================
   // Zoom Image
   ======================= */
-  const lightense = document.querySelector(".page__content img, .post__content img"),
+  const lightense = document.querySelectorAll(".page__content img, .post__content img"),
   imageLink = document.querySelectorAll(".page__content a img, .post__content a img");
 
-  if (imageLink) {
+  if (imageLink.length) {
     for (var i = 0; i < imageLink.length; i++) imageLink[i].parentNode.classList.add("image-link");
     for (var i = 0; i < imageLink.length; i++) imageLink[i].classList.add("no-lightense");
   }
 
-  if (lightense) {
+  if (lightense.length) {
     Lightense(".page__content img:not(.no-lightense), .post__content img:not(.no-lightense)", {
     padding: 60,
     offset: 30
@@ -108,12 +114,16 @@ document.addEventListener("DOMContentLoaded", function() {
   /* ==========================
   // Lightbox Gallery
   ========================== */
-  const lightbox = GLightbox({
-    touchNavigation: true,
-    loop: true,
-    moreLength: 0,
-    autoplayVideos: true
-  });
+  try {
+    const lightbox = GLightbox({
+      touchNavigation: true,
+      loop: true,
+      moreLength: 0,
+      autoplayVideos: true
+    });
+  } catch (e) {
+    // GLightbox may not be available on all pages
+  }
 
 
   /* =================================
@@ -133,33 +143,30 @@ document.addEventListener("DOMContentLoaded", function() {
   /* =======================
   // Scroll Top Button
   ======================= */
-  window.addEventListener("scroll", function () {
-    window.scrollY > window.innerHeight ? btnScrollToTop.classList.add("is-active") : btnScrollToTop.classList.remove("is-active");
-  });
+  if (btnScrollToTop) {
+    window.addEventListener("scroll", function () {
+      window.scrollY > window.innerHeight ? btnScrollToTop.classList.add("is-active") : btnScrollToTop.classList.remove("is-active");
+    });
 
-  btnScrollToTop.addEventListener("click", function () {
-    if (window.scrollY != 0) {
-      window.scrollTo({
-        top: 0,
-        left: 0,
-        behavior: "smooth"
-      })
-    }
-  });
+    btnScrollToTop.addEventListener("click", function () {
+      if (window.scrollY != 0) {
+        window.scrollTo({
+          top: 0,
+          left: 0,
+          behavior: "smooth"
+        })
+      }
+    });
+  }
 
 
   /* =======================
   // System Theme Listener
   ======================= */
-  window.matchMedia('(prefers-color-scheme: light)').addEventListener('change', function (e) {
-    if (localStorage.getItem("theme")) return; // manual override takes priority
-    if (e.matches) {
-      html.classList.remove('dark-mode');
-      html.classList.add('light-mode');
-    } else {
-      html.classList.remove('light-mode');
-      html.classList.add('dark-mode');
-    }
+  window.matchMedia('(prefers-color-scheme: light)').addEventListener('change', function () {
+    if (localStorage.getItem("theme")) return;
+    // CSS media queries handle colors and logos automatically.
+    // No class manipulation needed when following system preference.
   });
 
 });
