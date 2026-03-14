@@ -24,7 +24,7 @@
     line-height: 1.05;
     letter-spacing: -2px;
     text-transform: uppercase;
-    color: var(--white);
+    color: var(--heading-font-color);
 
     @media only screen and (max-width: 1140px) {
       font-size: 60px;
@@ -110,7 +110,7 @@
     text-transform: uppercase;
     letter-spacing: -1px;
     margin-bottom: 20px;
-    color: var(--white);
+    color: var(--heading-font-color);
 
     @media only screen and (max-width: $tablet) {
       font-size: 32px;
@@ -202,7 +202,7 @@
     text-transform: uppercase;
     letter-spacing: -1px;
     margin-bottom: 20px;
-    color: var(--white);
+    color: var(--heading-font-color);
 
     @media only screen and (max-width: $tablet) {
       font-size: 32px;
@@ -273,7 +273,7 @@
     text-transform: uppercase;
     letter-spacing: 0.5px;
     margin-bottom: 12px;
-    color: var(--white);
+    color: var(--heading-font-color);
   }
 
   .value-card__text {
@@ -299,7 +299,7 @@
     text-transform: uppercase;
     letter-spacing: -1px;
     margin-bottom: 12px;
-    color: var(--white);
+    color: var(--heading-font-color);
 
     @media only screen and (max-width: $tablet) {
       font-size: 32px;
@@ -370,7 +370,7 @@
     text-transform: uppercase;
     letter-spacing: 0.5px;
     margin-bottom: 4px;
-    color: var(--white);
+    color: var(--heading-font-color);
   }
 
   .team-card__role {
@@ -403,7 +403,7 @@
   padding: 80px 60px;
   border: 1px solid var(--brand-color);
   border-radius: 8px;
-  background: linear-gradient(135deg, rgba(0, 160, 0, 0.05) 0%, transparent 100%);
+  background: linear-gradient(135deg, rgba(196, 163, 110, 0.05) 0%, transparent 100%);
 
   @media only screen and (max-width: $mobile) {
     padding: 50px 30px;
@@ -415,7 +415,7 @@
     text-transform: uppercase;
     letter-spacing: -1px;
     margin-bottom: 20px;
-    color: var(--white);
+    color: var(--heading-font-color);
 
     @media only screen and (max-width: $tablet) {
       font-size: 32px;
@@ -476,12 +476,12 @@
 
   &--outline {
     background-color: transparent;
-    border: 2px solid var(--white);
-    color: var(--white);
+    border: 2px solid var(--heading-font-color);
+    color: var(--heading-font-color);
 
     &:hover {
-      background-color: var(--white);
-      color: var(--dark);
+      background-color: var(--heading-font-color);
+      color: var(--background-color);
     }
   }
 }

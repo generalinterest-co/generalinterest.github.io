@@ -6,7 +6,10 @@
         <div class="footer__inner">
           <div class="footer__brand">
             <a href="{{ site.baseurl }}/" class="footer__logo">
-              {% if site.data.settings.logo_white %}
+              {% if site.data.settings.logo_white and site.data.settings.logo %}
+                <img src="{{ site.baseurl }}{{ site.data.settings.logo_white }}" alt="{{ site.data.settings.title }}" class="footer__logo-image footer__logo-image--dark">
+                <img src="{{ site.baseurl }}{{ site.data.settings.logo }}" alt="{{ site.data.settings.title }}" class="footer__logo-image footer__logo-image--light">
+              {% elsif site.data.settings.logo_white %}
                 <img src="{{ site.baseurl }}{{ site.data.settings.logo_white }}" alt="{{ site.data.settings.title }}" class="footer__logo-image">
               {% else %}
                 <span class="footer__site-name">{{ site.data.settings.title }}</span>

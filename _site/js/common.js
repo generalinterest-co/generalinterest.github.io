@@ -44,11 +44,15 @@ document.addEventListener("DOMContentLoaded", function() {
   function darkMode() {
     if (html.classList.contains('dark-mode')) {
       html.classList.remove('dark-mode');
-      localStorage.removeItem("theme");
+      html.classList.add('light-mode');
+      localStorage.setItem("theme", "light");
       document.documentElement.removeAttribute("dark");
+      document.documentElement.setAttribute("light", "");
     } else {
+      html.classList.remove('light-mode');
       html.classList.add('dark-mode');
       localStorage.setItem("theme", "dark");
+      document.documentElement.removeAttribute("light");
       document.documentElement.setAttribute("dark", "");
     }
   }
@@ -140,6 +144,21 @@ document.addEventListener("DOMContentLoaded", function() {
         left: 0,
         behavior: "smooth"
       })
+    }
+  });
+
+
+  /* =======================
+  // System Theme Listener
+  ======================= */
+  window.matchMedia('(prefers-color-scheme: light)').addEventListener('change', function (e) {
+    if (localStorage.getItem("theme")) return; // manual override takes priority
+    if (e.matches) {
+      html.classList.remove('dark-mode');
+      html.classList.add('light-mode');
+    } else {
+      html.classList.remove('light-mode');
+      html.classList.add('dark-mode');
     }
   });
 

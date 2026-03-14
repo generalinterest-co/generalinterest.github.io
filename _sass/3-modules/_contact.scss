@@ -21,7 +21,7 @@
   outline: none;
   transition: .25s ease-in-out;
   resize: vertical;
-  color: var(--white);
+  color: var(--heading-font-color);
   background-color: var(--background-alt-color);
 
   &::placeholder {
