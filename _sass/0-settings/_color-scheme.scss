@@ -1,7 +1,7 @@
 /* Color Scheme */
 
 :root {
-  --brand-color: #00a000;
+  --brand-color: #c4a36e;
   --white: #fff;
   --off-white: #e8e6e1;
   --light-gray: #b0b0b0;
@@ -24,7 +24,7 @@
 
   --button-color: var(--white);
   --button-background-color: var(--brand-color);
-  --button-background-hover: #008a00;
+  --button-background-hover: #b08f5a;
 
   --border-color: #2a2a2a;
   --border-color-alt: #1e1e1e;
@@ -40,7 +40,7 @@
 }
 
 :root[dark] {
-  --brand-color: #00a000;
+  --brand-color: #c4a36e;
   --white: #fff;
   --off-white: #e8e6e1;
   --light-gray: #b0b0b0;
@@ -60,7 +60,7 @@
 
   --button-color: var(--white);
   --button-background-color: var(--brand-color);
-  --button-background-hover: #008a00;
+  --button-background-hover: #b08f5a;
 
   --border-color: #252629;
   --border-color-alt: #080b12;
