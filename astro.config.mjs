@@ -1,0 +1,11 @@
+// @ts-check
+
+import react from '@astrojs/react';
+import { defineConfig } from 'astro/config';
+
+// https://astro.build/config
+export default defineConfig({
+	site: 'https://www.generalinterest.co',
+	// Enable React to support React JSX components.
+	integrations: [react()],
+});
