@@ -9,8 +9,13 @@ const { hero } = siteData;
     <h1 class="hero__title">{hero.title}</h1>
     <p class="hero__description">{hero.description}</p>
     <div class="hero__cta">
-      <a href={hero.ctaUrl} class="btn btn--outline-light">{hero.ctaText}</a>
+      <a href={hero.ctaUrl} class="btn btn--outline">{hero.ctaText}</a>
     </div>
   </div>
-  <div class="hero__banner">{hero.bannerText}</div>
 </section>
+
+<div class="hero__banner">
+  <div class="container">
+    <span class="hero__banner-text">{hero.bannerText}</span>
+  </div>
+</div>

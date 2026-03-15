@@ -7,14 +7,6 @@ interface HeaderProps {
 
 export default function Header({ currentPath }: HeaderProps) {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
-
-  useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 40);
-    onScroll();
-    window.addEventListener("scroll", onScroll, { passive: true });
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
 
   useEffect(() => {
     document.body.style.overflow = menuOpen ? "hidden" : "";
@@ -23,10 +15,11 @@ export default function Header({ currentPath }: HeaderProps) {
 
   return (
     <>
-      <header className={`header${scrolled ? " header--scrolled" : ""}`}>
+      <header className="header">
         <div className="container">
           <a className="header__logo" href="/" aria-label={siteData.title}>
-            <img src={siteData.logoWhite} alt={siteData.title} />
+            <img className="logo--dark" src={siteData.logoWhite} alt={siteData.title} />
+            <img className="logo--light" src={siteData.logo} alt={siteData.title} />
           </a>
           <nav className="header__nav" aria-label="Main navigation">
             {siteData.menu.map((item) => (
