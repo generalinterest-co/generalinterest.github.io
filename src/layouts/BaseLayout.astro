@@ -41,7 +41,7 @@ const ogImage = new URL("/images/og-image.png", Astro.site);
     <title>{title}</title>
   </head>
   <body>
-    <Header client:load currentPath={currentPath} />
+    <Header client:idle currentPath={currentPath} />
     <main id="main">
       <slot />
     </main>
