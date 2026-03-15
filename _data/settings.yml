@@ -155,16 +155,3 @@ contact:
   email: formspree.lybk9@aleeas.com # Add your email for contact form
   description: Want to work with General Interest? Contact us here. # Add a description of your form.
 
-# NOTE
-# Clancy comes with a built-in contact form, that you can use with Formspree service to handle up to 50 submissions per month for free. You could also easily switch to another contact form service if you want.
-
-
-#-------------------------------
-# Comment Section (Disqus)
-
-#disqus-identifier: anvodstudio-demo # add your shortname for Disqus Comment. For example anvodstudio-demo
-
-
-#-------------------------------
-# Google Analytics
-#google-analytics: # Add your identifier. For example UA-99631805-1.
